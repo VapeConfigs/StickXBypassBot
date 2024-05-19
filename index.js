@@ -16,13 +16,13 @@ const apikey = "E99l9NOctud3vmu6bPne"; //api key using stickx. only change when 
 
 const commands = [
     {
-        name: 'arceus',
-        description: 'Whitelist Arceus X',
+        name: 'fluxus',
+        description: 'Whitelist Fluxus',
         options: [
             {
                 name: 'link',
                 type: 3,
-                description: 'The Arceus link',
+                description: 'The Fluxus link',
                 required: true,
             },
         ],
@@ -126,8 +126,8 @@ client.once('ready', () => {
 client.on('interactionCreate', async interaction => {
     if (!interaction.isCommand()) return;
 
-    if (interaction.commandName === 'arceus') {
-        await arceusx(interaction);
+    if (interaction.commandName === 'fluxus') {
+        await fluxus(interaction);
         if(advertise == true ){
             await interaction.followUp({ content: serverinvite, ephemeral: true });
         }else{
@@ -184,17 +184,17 @@ async function arceusx(interaction) {
 
     await interaction.reply({
         embeds: [{
-            title: "Whitelisting Your Arceus",
-            thumbnail: { url: 'https://cdn-images.podbay.fm/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3N0b3JhZ2UuYnV6enNwcm91dC5jb20vdmFyaWFudHMvamlydDZ1ZXJ5cjlwaXV5b2l0dWFnaGY3OXIydC82ODYxYTc1NTAyMjk2MTNlMzM4NzM3M2YyMGFkODI5YmE0YmM1NzY3ZGQ4ZWI5MmU3MGEwYWJlMzA0ZDRlNjU3LmpwZWciLCJmYWxsYmFjayI6Imh0dHBzOi8vaXMxLXNzbC5tenN0YXRpYy5jb20vaW1hZ2UvdGh1bWIvUG9kY2FzdHMxMjYvdjQvMGYvYjcvYzYvMGZiN2M2NWUtMGZkZS1kNTViLTQ4NDQtZDY0OGUyNTVjZWE0M216YV81OTc3NzU5OTE1MTA1OTI2NzQ1LmpwZWcvNjAweDYwMGJiLmpwZyJ9.3Z8ypAT8sIBIoxrQqtfAErDUZfhHI7g5POFT9et-IxI.jpg?width=400&height=400' },
+            title: "Whitelisting Your Fluxus",
+            thumbnail: { url: 'https://cdn.discordapp.com/attachments/1241789308348923975/1241797433101385801/IMG_1486.png?ex=664b817b&is=664a2ffb&hm=143f12583368d710a98f36f681d7307cd1ec1c26fee8a7e152f0bfbd852eeb69&' },
             fields: [
                 { name: 'Status', value: '```May take a while...```' }
             ]
         }],
     });
 
-    if (link.startsWith('https://spdmteam.com/key-system-1?hwid=')) {
+    if (link.startsWith('https://flux.li/android/external/start.php?HWID=')) {
         const hwid = link.split('=')[1].split('&')[0];
-        const apiUrl = `https://stickx.top/api-arceusx/?hwid=${hwid}&api_key=${apikey}`;
+        const apiUrl = `https://stickx.top/api-fluxus/?hwid={hwid}&api_key=E99l9NOctud3vmu6bPne`;
 
         try {
             const start = Date.now(); 
@@ -205,8 +205,8 @@ async function arceusx(interaction) {
             if (response.data.key === "Key System completed!") {
                 await interaction.editReply({
                     embeds: [{
-                        title: "Successfully Whitelisted Arceus",
-                        thumbnail: { url: 'https://cdn-images.podbay.fm/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3N0b3JhZ2UuYnV6enNwcm91dC5jb20vdmFyaWFudHMvamlydDZ1ZXJ5cjlwaXV5b2l0dWFnaGY3OXIydC82ODYxYTc1NTAyMjk2MTNlMzM4NzM3M2YyMGFkODI5YmE0YmM1NzY3ZGQ4ZWI5MmU3MGEwYWJlMzA0ZDRlNjU3LmpwZWciLCJmYWxsYmFjayI6Imh0dHBzOi8vaXMxLXNzbC5tenN0YXRpYy5jb20vaW1hZ2UvdGh1bWIvUG9kY2FzdHMxMjYvdjQvMGYvYjcvYzYvMGZiN2M2NWUtMGZkZS1kNTViLTQ4NDQtZDY0OGUyNTVjZWE0M216YV81OTc3NzU5OTE1MTA1OTI2NzQ1LmpwZWcvNjAweDYwMGJiLmpwZyJ9.3Z8ypAT8sIBIoxrQqtfAErDUZfhHI7g5POFT9et-IxI.jpg?width=400&height=400' },
+                        title: "Successfully Whitelisted Fluxus",
+                        thumbnail: { url: 'https://cdn.discordapp.com/attachments/1241789308348923975/1241797433101385801/IMG_1486.png?ex=664b817b&is=664a2ffb&hm=143f12583368d710a98f36f681d7307cd1ec1c26fee8a7e152f0bfbd852eeb69&' },
                         fields: [
                             { name: 'Status:', value: '```Succesfully Whitelisted. Please Wait For Countdown Or Restart Roblox.```' },
                             { name: 'HWID:', value: `${box}${hwid}${box}` },
@@ -222,14 +222,14 @@ async function arceusx(interaction) {
             } else {
                 await interaction.editReply({
                     embeds: [{
-                        title: "Failed To Whitelisted Arceus",
-                        thumbnail: { url: 'https://cdn-images.podbay.fm/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3N0b3JhZ2UuYnV6enNwcm91dC5jb20vdmFyaWFudHMvamlydDZ1ZXJ5cjlwaXV5b2l0dWFnaGY3OXIydC82ODYxYTc1NTAyMjk2MTNlMzM4NzM3M2YyMGFkODI5YmE0YmM1NzY3ZGQ4ZWI5MmU3MGEwYWJlMzA0ZDRlNjU3LmpwZWciLCJmYWxsYmFjayI6Imh0dHBzOi8vaXMxLXNzbC5tenN0YXRpYy5jb20vaW1hZ2UvdGh1bWIvUG9kY2FzdHMxMjYvdjQvMGYvYjcvYzYvMGZiN2M2NWUtMGZkZS1kNTViLTQ4NDQtZDY0OGUyNTVjZWE0M216YV81OTc3NzU5OTE1MTA1OTI2NzQ1LmpwZWcvNjAweDYwMGJiLmpwZyJ9.3Z8ypAT8sIBIoxrQqtfAErDUZfhHI7g5POFT9et-IxI.jpg?width=400&height=400' },
+                        title: "Failed To Whitelisted Fluxus",
+                        thumbnail: { url: 'https://cdn.discordapp.com/attachments/1241789308348923975/1241797433101385801/IMG_1486.png?ex=664b817b&is=664a2ffb&hm=143f12583368d710a98f36f681d7307cd1ec1c26fee8a7e152f0bfbd852eeb69&' },
                         fields: [
                             { name: 'Status:', value: '```Either Hwid Is Invalid Or Api Is Not Working.```' },
                             { name: 'HWID:', value: `${box}${hwid}${box}` }
                         ],
                         footer: {
-                            text: `Requested By ${interaction.user.username} | Made by ${madeby}`
+                            text: `Requested By ${interaction.user.username} | Made by ${mrdavidss#0000}`
                         }
                     }],
                 });                       
@@ -238,8 +238,8 @@ async function arceusx(interaction) {
             console.error(error);
             await interaction.editReply({
                 embeds: [{
-                    title: "Failed To Whitelisted Arceus",
-                    thumbnail: { url: 'https://cdn-images.podbay.fm/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3N0b3JhZ2UuYnV6enNwcm91dC5jb20vdmFyaWFudHMvamlydDZ1ZXJ5cjlwaXV5b2l0dWFnaGY3OXIydC82ODYxYTc1NTAyMjk2MTNlMzM4NzM3M2YyMGFkODI5YmE0YmM1NzY3ZGQ4ZWI5MmU3MGEwYWJlMzA0ZDRlNjU3LmpwZWciLCJmYWxsYmFjayI6Imh0dHBzOi8vaXMxLXNzbC5tenN0YXRpYy5jb20vaW1hZ2UvdGh1bWIvUG9kY2FzdHMxMjYvdjQvMGYvYjcvYzYvMGZiN2M2NWUtMGZkZS1kNTViLTQ4NDQtZDY0OGUyNTVjZWE0M216YV81OTc3NzU5OTE1MTA1OTI2NzQ1LmpwZWcvNjAweDYwMGJiLmpwZyJ9.3Z8ypAT8sIBIoxrQqtfAErDUZfhHI7g5POFT9et-IxI.jpg?width=400&height=400' },
+                    title: "Failed To Whitelisted Fluxus",
+                    thumbnail: { url: 'https://cdn.discordapp.com/attachments/1241789308348923975/1241797433101385801/IMG_1486.png?ex=664b817b&is=664a2ffb&hm=143f12583368d710a98f36f681d7307cd1ec1c26fee8a7e152f0bfbd852eeb69&' },
                     fields: [
                         { name: 'Status:', value: '```Either Api Is Ofline Or Not Responding.```' },
                     ],
