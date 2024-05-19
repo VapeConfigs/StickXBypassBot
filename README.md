@@ -1,6 +1,6 @@
 ## Available Commands
 
-- `/arceus`: Whitelist Arceus X
+- `/Fluxus`: Whitelist Fluxus
 - `/codex`: Whitelist Codex
 - `/delta`: Gets Delta Key
 - `/hydrogen`: Gets Hydrogen Key
