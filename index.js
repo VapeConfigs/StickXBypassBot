@@ -178,7 +178,7 @@ client.on('interactionCreate', async interaction => {
     }
 });
 
-async function arceusx(interaction) {
+async function fluxus(interaction) {
     const link = interaction.options.getString('link');
     const box = "```";
 
