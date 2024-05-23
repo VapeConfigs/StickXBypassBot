@@ -1,3 +1,6 @@
+## v1.3
+I just modded this one to fluxus for my bot
+
 ## Available Commands
 
 - `/Fluxus`: Whitelist Fluxus
