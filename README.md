@@ -1,5 +1,5 @@
-## v1.3
-I just modded this one to fluxus for my bot
+## Update V1.4
+fixed the node . run cmd
 
 ## Available Commands
 
@@ -31,7 +31,9 @@ After Edited The Variables Open Console To The Folder And Enter ```npm install d
 
 ## Run The Bot
 
-Just Do ```node .``` In The Console Where You Entered The npm Install Command In
+Just Do ```npm install node .``` In The Console Where You Entered The npm Install Command In.
+
+Then do ```node .```
 
 ## CREDITS
 
