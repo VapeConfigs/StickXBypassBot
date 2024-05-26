@@ -33,7 +33,7 @@ After Edited The Variables Open Console To The Folder And Enter ```npm install d
 
 Just Do ```npm install node .``` In The Console Where You Entered The npm Install Command In.
 
-Then do ```node .```
+Then do ```node .``` to get bot cmds!
 
 ## CREDITS
 
