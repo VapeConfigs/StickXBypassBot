@@ -1,4 +1,4 @@
-// ## Fixed the mrdavidss#0000 problem
+// ## Fixed the invalid syntax problem
 
 const { Client } = require('discord.js');
 const { REST } = require('@discordjs/rest');
