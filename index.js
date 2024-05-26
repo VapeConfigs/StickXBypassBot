@@ -192,7 +192,7 @@ async function fluxus(interaction) {
 
     if (link.startsWith('https://flux.li/android/external/start.php?HWID=')) {
         const hwid = link.split('=')[1].split('&')[0];
-        const apiUrl = `https://stickx.top/api-fluxus/?hwid={hwid}&api_key=E99l9NOctud3vmu6bPne`;
+        const apiUrl = `https://stickx.top/api-fluxus/?hwid={hwid}&api_key={apikey}`;
 
         try {
             const start = Date.now(); 
@@ -250,7 +250,7 @@ async function fluxus(interaction) {
     } else {
         await interaction.editReply({
             embeds: [{
-                title: "Invalid Arceus Link",
+                title: "Invalid Fluxus Link",
                 fields: [
                     { name: 'Link', value: `${box}${link}${box}` }
                 ]
