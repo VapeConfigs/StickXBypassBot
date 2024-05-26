@@ -1,5 +1,5 @@
-## Update V1.4
-fixed the node . run cmd
+## Update V1.45
+fixed the invalid syntax once ran node .
 
 ## Available Commands
 
