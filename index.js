@@ -1,6 +1,4 @@
-//MADE BY WMND .gg/bypassi
-//uses stickx api
-
+// ## Fixed the mrdavidss#0000 problem
 
 const { Client } = require('discord.js');
 const { REST } = require('@discordjs/rest');
@@ -229,7 +227,7 @@ async function fluxus(interaction) {
                             { name: 'HWID:', value: `${box}${hwid}${box}` }
                         ],
                         footer: {
-                            text: `Requested By ${interaction.user.username} | Made by ${mrdavidss#0000}`
+                            text: `Requested By ${interaction.user.username} | Made by ${user}`
                         }
                     }],
                 });                       
